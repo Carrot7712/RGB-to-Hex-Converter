@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <title>RGB-to-Hex-Converter</title>
+  </head>
+  <body id="background">
+    <!-- converter，控制器的父層，等等裝監聽器-->
+    <div class="container d-flex flex-column justify-content-center align-items-center mt-5" id="color-picker">
+      <!-- Red控制行 -->
+      <div class="row d-flex align-items-center ">
+        <span class="badge badge-danger">R</span>
+        <input
+          type="range"
+          id="red-input"
+          class="mx-3 mt-1"
+          min="0"
+          max="255"
+          step="1"
+          value="15"
+        />
+        <span class="badge badge-danger" id="red-value">15</span>
+      </div>
+      <!-- Green控制行 -->
+      <div class="row d-flex align-items-center">
+        <span class="badge badge-success">G</span>
+        <input
+          type="range"
+          id="green-input"
+          class="mx-3 mt-1"
+          min="0"
+          max="255"
+          step="1"
+          value="76"
+        />
+        <span class="badge badge-success" id="green-value">76</span>
+      </div>
+      <!-- Blue控制行 -->
+      <div class="row d-flex align-items-center">
+        <span class="badge badge-primary">B</span>
+        <input
+          type="range"
+          id="blue-input"
+          class="mx-3 mt-1"
+          min="0"
+          max="255"
+          step="1"
+          value="129"
+        />
+        <span class="badge badge-primary" id="blue-value">129</span>
+      </div>
+      <!-- hex code 顯示區 -->
+      <div class="row d-flex align-items-center">
+          <span class="badge badge-light" id="hex-panel">#0F4C81</span>
+      </div>
+    </div>
+    <!-- bootstrap & my js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
