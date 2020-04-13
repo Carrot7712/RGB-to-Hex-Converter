@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+
+.box {
+  height: 100vh; 
+  display:flex;
+  align-items:center; /*為了置中*/
+}
+.color{
+  width: 70%;
+}
+.color span{
+  width: 125px;
+  font-size: 2em; 
+}
+#hex-panel{
+  font-size: 4em; 
+  background-color: rgba(255, 255, 255, 0.75);
+}
+/*改變range樣式的方法參考了這篇https://www.oxxostudio.tw/articles/201503/html5-input-range-style.html*/
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none; /*去除系統默認樣式*/
+  position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+  width:18px;
+  height:18px;
+  background:#e3e3e3;
+  border-radius:50%;
+  transition:.2s;        /* 點選放大時候的漸變時間 */
+}

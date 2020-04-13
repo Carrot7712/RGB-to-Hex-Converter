@@ -7,16 +7,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="style.css">
     <title>RGB-to-Hex-Converter</title>
   </head>
   <body id="background">
+    <div class="box">
     <!-- converter，控制器的父層，等等裝監聽器-->
-    <div class="container d-flex flex-column justify-content-center align-items-center mt-5" id="color-picker">
+    <div class="container d-flex flex-column align-items-center" id="color-picker" >
       <!-- Red控制行 -->
-      <div class="row d-flex align-items-center ">
+      <div class="d-flex align-items-center color my-1">
         <span class="badge badge-danger">R</span>
         <input
           type="range"
+          class="custom-range w-100 mx-1"
           id="red-input"
           class="mx-3 mt-1"
           min="0"
@@ -27,10 +30,11 @@
         <span class="badge badge-danger" id="red-value">15</span>
       </div>
       <!-- Green控制行 -->
-      <div class="row d-flex align-items-center">
+      <div class="d-flex align-items-center color my-1">
         <span class="badge badge-success">G</span>
         <input
           type="range"
+          class="custom-range mx-1"
           id="green-input"
           class="mx-3 mt-1"
           min="0"
@@ -41,10 +45,11 @@
         <span class="badge badge-success" id="green-value">76</span>
       </div>
       <!-- Blue控制行 -->
-      <div class="row d-flex align-items-center">
+      <div class="d-flex align-items-center color m-1">
         <span class="badge badge-primary">B</span>
         <input
           type="range"
+          class="custom-range mx-1"
           id="blue-input"
           class="mx-3 mt-1"
           min="0"
@@ -56,8 +61,9 @@
       </div>
       <!-- hex code 顯示區 -->
       <div class="row d-flex align-items-center">
-          <span class="badge badge-light" id="hex-panel">#0F4C81</span>
+          <span class="badge" id="hex-panel">#0F4C81</span>
       </div>
+    </div>
     </div>
     <!-- bootstrap & my js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
