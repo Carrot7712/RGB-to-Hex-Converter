@@ -7,13 +7,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
     />
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>RGB-to-Hex-Converter</title>
   </head>
   <body id="background">
     <div class="box">
+    
     <!-- converter，控制器的父層，等等裝監聽器-->
     <div class="container d-flex flex-column align-items-center" id="color-picker" >
+      <div class="title mb-4">
+      <h1>A RGB to Hex Converter <i class='bx bx-slider-alt' ></i></h1>
+      <h4 class="text-center">Slide it to find your color!</h4>
+    </div>
       <!-- Red控制行 -->
       <div class="d-flex align-items-center color my-1">
         <span class="badge badge-danger">R</span>
